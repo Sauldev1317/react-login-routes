@@ -1,0 +1,108 @@
+.root {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.informationContainer{
+    flex: 60;
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.informationImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: url(../../assets/img/signInBackground.jpg) ; 
+    background-position-x: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform .5s ease;
+}
+
+.informationImg:hover{
+    transform: scale(1.01);
+}
+
+.imgFilter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: white;
+}
+
+.textWidth {
+    max-width: 500px;
+}
+
+.titleText {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.descriptionText {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1280px){
+    .imgFilter {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media screen and (max-width: 960px){
+	.root {
+        flex-direction: column;
+    }
+
+    .informationContainer {
+        padding-right: 24px;
+        border-radius: 0
+    }
+
+    .imgFilter{
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .informationContainer {
+        padding: 0;
+        border-radius: 0
+    }
+
+    .informationImg{
+        border-radius: 0;
+    }
+
+    .imgFilter{
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+}
